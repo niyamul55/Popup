@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APK Popup Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📱 APK Popup Manager</h1>
+    <p>Upload your APK and optionally a popup ZIP file to add or remove popups.</p>
+
+    <div class="upload-box">
+      <label>Choose APK file:</label>
+      <input type="file" id="apkFile" accept=".apk" />
+    </div>
+
+    <div class="upload-box">
+      <label>Choose Popup ZIP (optional):</label>
+      <input type="file" id="zipFile" accept=".zip" />
+    </div>
+
+    <div class="buttons">
+      <button id="removeBtn">🧹 Remove Popup</button>
+      <button id="addBtn">➕ Add Popup</button>
+    </div>
+
+    <div id="status"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
